@@ -10,7 +10,6 @@ void Cone::draw()
 {
     double angle_increment = M_PI / this->edges;
     double angle = 0;
-    float y     = -0.4;
 
     GLdouble top[3]        = { 0, 1, 0 };
     GLdouble center[3]     = { 0, -1, 0 };

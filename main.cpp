@@ -32,8 +32,8 @@ clock_t startTime, startTime2; // Animation clocks
 int spin   = 0;                // Flag to turn spin on / off
 int moveUp = 1;                // In E, is the sphere going up or down?
 
-Sphere sphere = NULL;
-Cone cone = NULL;
+Sphere sphere = 0;
+Cone cone = 0;
 
 /**
  * Sets up boring OpenGL geometry stuff
