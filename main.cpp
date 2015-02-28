@@ -67,13 +67,13 @@ void SetupShaders(void)
 {
     shaderprogram = glCreateProgram();
 
-    vertexsource = filetobuf((char *)"Graphics-1/main.vert");
+    vertexsource = filetobuf((char *)"main.vert");
     vertexshader = glCreateShader(GL_VERTEX_SHADER);
     glShaderSource(vertexshader, 1, (const GLchar**)&vertexsource, 0);
     glCompileShader(vertexshader);
     glAttachShader(shaderprogram, vertexshader);
 
-    fragmentsource = filetobuf((char *)"Graphics-1/main.frag");
+    fragmentsource = filetobuf((char *)"main.frag");
     fragmentshader = glCreateShader(GL_FRAGMENT_SHADER);
     glShaderSource(fragmentshader, 1, (const GLchar**)&fragmentsource, 0);
     glCompileShader(fragmentshader);
