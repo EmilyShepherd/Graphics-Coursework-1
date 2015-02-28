@@ -14,7 +14,6 @@ out vec2 UV;
 void main(void)
 {
     gl_Position = mvpmatrix * vec4(in_Position, 1.0);
-    normal = mvpmatrix * vec4(in_Normal, 0.0);
-    UV = in_UV;
+	normal = mvpmatrix * vec4(in_Normal, 0.0);
+	UV = in_UV;
 }
-
